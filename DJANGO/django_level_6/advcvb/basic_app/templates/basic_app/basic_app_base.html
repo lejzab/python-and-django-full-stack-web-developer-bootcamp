@@ -11,21 +11,16 @@
 
   </head>
   <body>
-    <div class="navbar navbar-default navbar-static-top">
-      <ul class="nav navbar-nav">
-        <li> <a class="navbar-brand" href="{% url 'basic_app:list' %}">Schools</a> </li>
-        <li> <a class="navbar-link" href="{% url 'admin:index'%}">Admin</a> </li>
-        <li> <a href="#"></a> </li>
-      </ul>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="navbar-nav">
+        <a class="navbar-brand" href="{% url 'basic_app:list' %}">Schools</a>
+        <a class="nav-item nav-link" href="{% url 'admin:index' %}">Admin</a>
+        <a class="nav-item nav-link" href="#"></a>
+      </div>
+    </nav>
     <div class="container">
       {% block body_block %}
-
-
-
-
       {% endblock %}
-
     </div>
   </body>
 </html>
