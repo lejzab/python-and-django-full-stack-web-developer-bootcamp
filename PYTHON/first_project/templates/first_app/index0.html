@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang=pl dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Django guitar</title>
+    <link rel="stylesheet" href="{% static "css/"%}master.css">
+  </head>
+  <body>
+    <h1>Hello, this is picture of Django himself</h1>
+    <img src="{% static "images/"%}{{image_url}}" alt="{{image_alt}}">
+  </body>
+</html>

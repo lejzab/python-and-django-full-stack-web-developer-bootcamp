@@ -1,0 +1,41 @@
+h1{
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+/* tr{
+  border: 2px solid blue;
+
+} */
+
+table{
+  /* border: 4px solid black; */
+ margin: auto;
+}
+
+
+td{
+  border: 15px solid white;
+  width: 150px;
+  height: 300px;
+}
+#one{
+  background-color: #A2A79E;
+}
+
+
+#two{
+  background-color: #A27E8E;
+}
+
+#three{
+  background-color: #A77464;
+}
+
+#four {
+  background-color: #88292F;
+}
+
+#five{
+  background-color: #2E1E0F;
+}
