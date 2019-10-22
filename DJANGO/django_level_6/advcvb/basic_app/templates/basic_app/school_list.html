@@ -4,7 +4,7 @@
   <h1>welcome to the list of all schools</h1>
   <ol>
     {% for school in schools %}
-      <li><a href="{{school.id}}">{{ school.name }}</a></li>
+      <li><a href="{% url 'basic_app:detail' pk=school.pk %}">{{ school.name }}</a></li>
     {% endfor %}
   </ol>
 {% endblock %}
