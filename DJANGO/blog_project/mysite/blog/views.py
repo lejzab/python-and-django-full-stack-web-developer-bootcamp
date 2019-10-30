@@ -14,6 +14,7 @@ class AboutView(TemplateView):
 
 class PostListView(ListView):
     model = Post
+    context_object_name = 'posts'
 
     def get_queryset(self):
         return Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
@@ -46,9 +47,10 @@ class DraftListView(LoginRequiredMixin, ListView):
     # login_url = '/login/'
     # redirect_field_name = 'blog/post_list.html'
     model = Post
+    context_object_name = 'post_drafts'
 
     def get_queryset(self):
-        return Post.objects.filter(published_date__isnull=True).order_by('creared_date')
+        return Post.objects.filter(published_date__isnull=True).order_by('create_date')
 
 @login_required
 def add_comment_to_post(request, pk):
